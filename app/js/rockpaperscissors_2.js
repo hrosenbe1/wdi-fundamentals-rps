@@ -84,20 +84,21 @@ function playToFive() {
         var computerMove = getComputerMove();
         var winner = getWinner(playerMove, computerMove);
         if (winner === "player wins") {
-            playerWins +=1;
-        }
-            console.log('player chose' + ' ' + playerMove + ' ' + 'while computer chose' + ' ' + computerMove);
-            console.log('the score is currently ' + playerWins + ' to ' + computerWins + '\n')
+            playerWins +=1; 
+            }
+        else   
         if (winner === "computer wins") {
               computerWins +=1;
-        }  
+        }  else      
+        console.log('player chose' + ' ' + playerMove + ' ' + 'while computer chose' + ' ' + computerMove);
+        console.log('the score is currently ' + playerWins + ' to ' + computerWins + '\n');
             }
         if (playerWins === 5) {
             console.log('player wins');
         } else if (computerWins === 5) {
             console.log('computer wins');
         }
-        console.log(computerWins, playerWins);
+        console.log(computerWins, playerWins)
     return [playerWins, computerWins];
 }
  playToFive();
